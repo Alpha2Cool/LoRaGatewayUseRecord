@@ -19,4 +19,4 @@ The status should be **inactive**
 RUN:  
 `./pktfwd`  
 
-![gateway pic](https://github.com/Alpha2Cool/sx1301GatewayCmd/gw.PNG)
+![gateway pic](https://github.com/Alpha2Cool/sx1301GatewayCmd/gw.png)
