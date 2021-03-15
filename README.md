@@ -1,4 +1,4 @@
-# sx1301 gateway usage record
+# SX1301 gateway usage record
 
 ## 1. Log in to the gateway
 The gateway ip is 172.0.41.196  
