@@ -18,3 +18,5 @@ The status should be **inactive**
 # 3. Receive data
 RUN:  
 `./pktfwd`  
+
+![gateway pic](https://github.com/Alpha2Cool/sx1301GatewayCmd/gw.PNG)
