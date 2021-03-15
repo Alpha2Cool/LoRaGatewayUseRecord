@@ -15,7 +15,7 @@ The required frequency scheme can be changed by any of the following 4 commands:
 `ln -sf global_conf_as920.json global_conf.json`  
 *EU868*  
 `ln -sf global_conf_eu868.json global_conf.json`  
-![frequency plan table](https://github.com/Alpha2Cool/sx1301GatewayCmd/blob/master/fpt.PNG)
+![frequency plan table](https://github.com/Alpha2Cool/sx1301GatewayCmd/blob/master/fpt.PNG)  
 After changing the frequency, you need to restart the Gateway service for the setting to take effect:  
 `sudo /etc/init.d/lrgateway restart`  
 
@@ -34,4 +34,4 @@ The status should be **inactive**
 RUN:  
 `./pktfwd`  
 
-![gateway pic](https://github.com/Alpha2Cool/sx1301GatewayCmd/blob/master/gw.PNG)
+![gateway pic](https://github.com/Alpha2Cool/sx1301GatewayCmd/blob/master/gw.PNG)  
