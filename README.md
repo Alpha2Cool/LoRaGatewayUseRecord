@@ -36,5 +36,5 @@ RUN:
 
 ![gateway pic](https://github.com/Alpha2Cool/sx1301GatewayCmd/blob/master/gw.PNG)  
 User Manual download address:  
-[EN](https://alpha2cool.lanzous.com/il4TFmy5pvc)
-[CN](https://alpha2cool.lanzous.com/ihlZEmy5psj)
+[EN](https://alpha2cool.lanzous.com/il4TFmy5pvc)  
+[CN](https://alpha2cool.lanzous.com/ihlZEmy5psj)  
