@@ -6,7 +6,7 @@ So modify the local ip to 10.130.1.xx
   
 ## 2. Use *single_tx* to send  
 `$ cd /usr/bin`  
-`$ ./single_tx -h'  
+`$ ./single_tx -h`  
 ```
 Usage: single_tx           [-f frequence] <uint> (default:868500000) target frequency in Hz  
                            [-r] set as rx  
