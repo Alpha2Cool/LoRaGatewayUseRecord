@@ -22,5 +22,5 @@ Usage: single_tx           [-f frequence] <uint> (default:868500000) target freq
 Transmit on freq 902.3Mhz:  
 `./single_tx -f 902300000 -s 7 -b 125000 -m 123321     # try many times!!!`  
 or  
-`./single_tx -f 902300000 -s 7 -b 125000 -m 123321 -l  # continue mode, higher packet reciption rate`  
+`./single_tx -f 902300000 -s 7 -b 125000 -m 123321 -l  # continue mode, higher packet reception probability`  
   
