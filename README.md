@@ -1,40 +1,25 @@
-# SX1301 gateway usage record
-
-## 1. Log in to the gateway
-The gateway ip is 172.0.41.196  
-So modify the local ip to 172.0.41.xx  
-
-## 2. Change frequency plan
-`cd /risinghf/pktfwd`  
-The required frequency scheme can be changed by any of the following 4 commands:  
-*CN470*  
-`ln -sf global_conf_cn470.json global_conf.json`  
-*CN433*  
-`ln -sf global_conf_cn433.json global_conf.json`  
-*AS920*  
-`ln -sf global_conf_as920.json global_conf.json`  
-*EU868*  
-`ln -sf global_conf_eu868.json global_conf.json`  
-![frequency plan table](https://github.com/Alpha2Cool/sx1301GatewayCmd/blob/master/fpt.PNG)  
-After changing the frequency, you need to restart the Gateway service for the setting to take effect:  
-`sudo /etc/init.d/lrgateway restart`  
-
-## 3. Function disabled
-Since the data receiving function on the web side  
-and the command side cannot be enabled at the same time  
-the receiving function on the web side should be disabled  
-RUN:  
-`cd /risinghf/pktfwd`  
-`sudo systemctl stop pktfwd`  
-To check the running status, execute the following command:  
-`sudo systemctl status pktfwd`  
-The status should be **inactive**  
-
-## 4. Receive data
-RUN:  
-`./pktfwd`  
-
-![gateway pic](https://github.com/Alpha2Cool/sx1301GatewayCmd/blob/master/gw.PNG)  
-User Manual download address:  
-[EN](https://alpha2cool.lanzous.com/il4TFmy5pvc)  
-[CN](https://alpha2cool.lanzous.com/ihlZEmy5psj)  
+# LG02 gateway downlink usage record  
+  
+## 1. Log in to the gateway  
+The gateway ip is 10.130.1.1  
+So modify the local ip to 10.130.1.xx  
+  
+## 2. Use *single_tx* to send  
+'$ cd /usr/bin'  
+'$ ./single_tx -h'  
+'Usage: single_tx           [-f frequence] <uint> (default:868500000) target frequency in Hz'  
+'                           [-r] set as rx'  
+'                           [-s spreadingFactor] <uint> (default: 7)'  
+'                           [-b bandwidth] <uint> default: 125k'  
+'                           [-c coderate] <uint> LoRa Coding Rate [1-4]'  
+'                           [-w syncword] <uint> default: 52, 0x34'  
+'                           [-i] send packet using inverted modulation polarity'  
+'                           [-l] continue mode'  
+'                           [-m message] <text> send this message from radio'  
+'                           [-h] show this help and exit '  
+  
+Transmit on freq 902.3Mhz:  
+'./single_tx -f 902300000 -s 7 -b 125000 -m 123321     # try many times!!!'  
+or  
+'./single_tx -f 902300000 -s 7 -b 125000 -m 123321 -l  # continue mode, higher packet reciption rate'  
+  
