@@ -1,6 +1,6 @@
 # LG02 gateway downlink usage record  
   
-## 1. Log in to the gateway  
+## 1. Log in  
 The gateway ip is 10.130.1.1  
 So modify the local ip to 10.130.1.xx  
   
